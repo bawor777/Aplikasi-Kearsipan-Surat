@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Aplikasi Surat
+  ~     activity_splash.xml
+  ~     Created by Rifan Kurniawan on 14/8/2022
+  ~     email 	    : cah2701@gmail.com
+  ~     Copyright © 2022 Rifan Kurniawan. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    tools:context=".Activity.SplashActivity">
+
+    <ImageView
+
+        android:id="@+id/logo"
+        android:layout_marginTop="250dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/logo_apk_rifan2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/logo"
+        android:layout_marginEnd="-15dp"
+        android:text="©Rifan 2022 version 1.0"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

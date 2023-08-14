@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Aplikasi Surat
+  ~     activity_login.xml
+  ~     Created by Rifan Kurniawan on 14/8/2022
+  ~     email 	    : cah2701@gmail.com
+  ~     Copyright © 2022 Rifan Kurniawan. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Activity.LoginActivity">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvApk"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="15dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:layout_marginBottom="15dp"-->
+<!--        android:text="Aplikasi Kearsipan"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#5463FF"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:typeface="serif" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvApk2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/tvApk"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Surat Keluar"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#5463FF"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:typeface="serif" />-->
+
+    <ImageView
+        android:id="@+id/imgV_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_apk_rifan1" />
+
+
+    <EditText
+
+        android:id="@+id/etUsername"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/imgV_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom2"
+        android:drawablePadding="24dp"
+        android:hint="Nip"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#919090"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom2"
+        android:drawablePadding="24dp"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#919090"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom1"
+        android:clickable="true"
+        android:text="MASUK"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvCreateAccount"-->
+<!--        android:layout_below="@id/btnLogin"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textAlignment="center"-->
+<!--        android:text="Create New Account"/>-->
+
+</RelativeLayout>

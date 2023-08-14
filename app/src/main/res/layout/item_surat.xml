@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Aplikasi Surat
+  ~     item_surat.xml
+  ~     Created by Rifan Kurniawan on 14/8/2022
+  ~     email 	    : cah2701@gmail.com
+  ~     Copyright © 2022 Rifan Kurniawan. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_surat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardMaxElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:background="@drawable/custom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:layout_marginBottom="4dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription"
+                tools:src="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_item_kode_cabang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:typeface="serif"
+                tools:ignore="RtlHardcoded"
+                tools:text="@string/kode_cabang" />
+
+
+            <TextView
+                android:id="@+id/tv_item_judul"
+                android:layout_below="@+id/tv_item_kode_cabang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                tools:ignore="RtlHardcoded"
+                tools:text="@string/judul" />
+
+            <TextView
+                android:typeface="serif"
+                android:id="@+id/tv_item_noSurat"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_judul"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:textSize="16dp"
+                tools:ignore="RtlHardcoded"
+                tools:text="@string/no_surat" />
+            <TextView
+                android:typeface="serif"
+                android:id="@+id/tv_item_tanggal"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_item_noSurat"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:layout_toRightOf="@id/img_item_photo"
+                android:textSize="16sp"
+                tools:ignore="RtlHardcoded"
+                tools:text="@string/tanggal" />
+<!--            <TextView-->
+<!--                android:id="@+id/tv_item_FileNama"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_below="@id/tv_item_tanggal"-->
+<!--                android:layout_marginLeft="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:layout_toEndOf="@id/img_item_photo"-->
+<!--                android:layout_toRightOf="@id/img_item_photo"-->
+<!--                android:ellipsize="end"-->
+<!--                android:maxLines="5"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:ignore="RtlHardcoded"-->
+<!--                tools:text="@string/fileName" />-->
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

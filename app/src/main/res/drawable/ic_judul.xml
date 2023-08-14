@@ -1,0 +1,18 @@
+<!--
+  ~  Aplikasi Surat
+  ~     ic_judul.xml
+  ~     Created by Rifan Kurniawan on 14/8/2022
+  ~     email 	    : cah2701@gmail.com
+  ~     Copyright © 2022 Rifan Kurniawan. All rights reserved.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="3264dp"
+    android:height="3264dp"
+    android:viewportWidth="3264"
+    android:viewportHeight="3264">
+  <path
+      android:pathData="M0,0L0,3264L3264,3264L3264,0L0,0z"
+      android:fillColor="#010101"
+      android:strokeColor="#00000000"/>
+</vector>

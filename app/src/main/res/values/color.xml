@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Aplikasi Surat
+  ~     color.xml
+  ~     Created by Rifan Kurniawan on 14/8/2022
+  ~     email 	    : cah2701@gmail.com
+  ~     Copyright © 2022 Rifan Kurniawan. All rights reserved.
+  -->
+
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF9800</color>
+</resources>

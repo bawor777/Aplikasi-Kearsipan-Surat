@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Aplikasi Surat
+  ~     activity_lihat.xml
+  ~     Created by Rifan Kurniawan on 14/8/2022
+  ~     email 	    : cah2701@gmail.com
+  ~     Copyright © 2022 Rifan Kurniawan. All rights reserved.
+  -->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.LihatActivity"
+    android:background="@drawable/batik">
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/colorAccent">-->
+<!--        <LinearLayout-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Cari Data"/>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="match_parent"/>-->
+<!--            <EditText-->
+<!--                android:id="@+id/edtCari"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableEnd="@drawable/cari"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="cari"/>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="invisible"
+        app:layout_anchor="@id/rv_surat"
+        app:layout_anchorGravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="30dp"
+        android:id="@+id/rv_surat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_surat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:backgroundTint="#ECECEC"
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:foregroundGravity="bottom"
+        app:fabSize="normal"
+        app:layout_anchor="@id/rv_surat"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/ic_add"
+        tools:ignore="ContentDescription" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
